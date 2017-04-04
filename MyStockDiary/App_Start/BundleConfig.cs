@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace MyStockDiary.App_Start
+namespace MyStockDiary
 {
     public class BundleConfig
     {
@@ -20,19 +20,25 @@ namespace MyStockDiary.App_Start
                       "~/Scripts/bootstrap/bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap/bootstrap.css"));
-
-            bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/adminlte/AdminLTE.css"));
-
-            bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/adminlte/skins/skin-blue.css"));
-
-            bundles.Add(new StyleBundle("~/Content/css").Include(
+                      "~/Content/adminlte/AdminLTE.css",
+                      "~/Content/adminlte/skins/skin-blue.css",
+                      "~/Content/bootstrap/bootstrap.css",
+                      "~/Content/ionicons/ionicons.css",
                       "~/Content/font-awesome/font-awesome.css"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/ionicons/ionicons.css"));
+            //bundles.Add(new StyleBundle("~/Content/css").Include(
+            //          "~/Content/adminlte/AdminLTE.css"));
+
+            //bundles.Add(new StyleBundle("~/Content/css").Include(
+            //          "~/Content/adminlte/skins/skin-blue.css"));
+
+            //bundles.Add(new StyleBundle("~/Content/css").Include(
+            //          "~/Content/ionicons/ionicons.css"));
+
+            //bundles.Add(new StyleBundle("~/Content/css").Include(
+            //          "~/Content/font-awesome/font-awesome.css"));
+
+
 
             //bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
             //            "~/Scripts/jquery.validate*"));
